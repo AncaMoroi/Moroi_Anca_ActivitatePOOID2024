@@ -1,0 +1,4 @@
+﻿  Lectia2.cpp
+C:\Users\moroi\source\repos\Moroi_Anca_ActivitatePOOID2024\Lectia2\Lectia2.cpp(39,20): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\moroi\source\repos\Moroi_Anca_ActivitatePOOID2024\Lectia2\Lectia2.cpp(94,6): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Lectia2.vcxproj -> C:\Users\moroi\source\repos\Moroi_Anca_ActivitatePOOID2024\Lectia2\x64\Debug\Lectia2.exe
