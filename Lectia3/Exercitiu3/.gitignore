@@ -1,0 +1,22 @@
+# Ignore Visual Studio temporary files, build results, and
+# user-specific files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.cache
+
+# Ignore build results
+[Bb]in/
+[Oo]bj/
+
+# Ignore packages folder
+packages/
+
+# Ignore NuGet packages
+*.nupkg
+*.snupkg
+
+# Ignore other files like log files, etc.
+*.log
