@@ -86,6 +86,23 @@ public:
 		cout << endl;
 	}
 
+	Nava(const Nava &otherNava):idNava(++id), nrBucati(otherNava.nrBucati) {
+		this->culoare = new char[strlen(otherNava.culoare) + 1];
+		strcpy_s(this->culoare, strlen(otherNava.culoare) + 1, otherNava.culoare);
+		this->marca = otherNava.marca;
+		if (otherNava.pret != nullptr) {
+			this->pret = new float[this->nrBucati];
+			for (int i = 0; i < nrBucati; i++) {
+				this->pret[i] = otherNava.pret[i];
+			}
+		}
+		else {
+			this->pret = nullptr;
+		}
+
+
+	}
+
 };
 
 int Nava::id = 0;
@@ -104,4 +121,7 @@ void main() {
 
 	Nava nava2parametriFaraPret(1, "Hiundai");
 	nava2parametriFaraPret.afisare();
+
+	Nava nava3 = nava2parametriFaraPret;
+	nava3.afisare();
 }
